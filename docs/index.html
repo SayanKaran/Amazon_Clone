@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/docs/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/docs/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/docs/fav/favicon-16x16.png">
+<link rel="manifest" href="/docs/fav/site.webmanifest">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #Search:hover{
+            background-color: rgb(243, 168, 92);
+        }
+        .gradient-90 {
+  background: linear-gradient(0deg, #f0b000, #ffea81);
+  border: 9px solid rgb(255, 177, 43);
+}
+    </style>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body id="top">
+    <header>
+        <nav class="bg-[#0F1111] h-16 flex justify-evenly items-center text-white text-sm">
+            <a href="" class="border border-transparent p-1 hover:border-white">
+                <img src="img/amazon_logo.png" alt="" class="w-25 h-10 mt-2">
+            </a>
+            <div class="border border-transparent p-1 hover:border-white cursor-pointer">
+                <p class="text-xs pl-3" style="color: rgba(255, 255, 255, 0.824);">Deliver to</p>
+                <div class="flex items-center gap-1">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="font-bold">India</p>
+                </div>
+            </div>
+
+            <div class="text-black flex h-12 p-1">
+                <select class="bg-[#E6E6E6] px-2 rounded-lg rounded-r-none outline-orange-400 cursor-pointer hover:bg-[#cecece]">
+                    <option value="">All</option>
+                </select>
+                <input type="text" placeholder="Search Amazon" class="w-[680px] pl-2 text-base  focus:outline-orange-400">
+                <div id="Search" class="bg-orange-300 rounded-md w-[50px] rounded-l-none p-2 cursor-pointer flex justify-center items-center">
+                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </div>
+            </div>
+
+            <div class="flex border border-transparent p-1 hover:border-white cursor-pointer">
+                <img src="img/USFlag.png" class="h-4 w-5 mt-1"/>
+                <select class="bg-transparent font-bold cursor-pointer">
+                    <option>EN</option>
+                </select>
+            </div>
+
+            <div class="border border-transparent p-1 hover:border-white cursor-pointer">
+                <p class="text-xs pl-1">Hello, sign in</p>
+                <select class="bg-transparent font-bold cursor-pointer">
+                    <option>Accounts & Lists</option>
+                </select>
+            </div>
+
+            <div class="border border-transparent p-1 hover:border-white cursor-pointer">
+                <p class="text-xs">Returns</p>
+                <p class="font-bold">& Orders</p>
+            </div>
+
+            <div class="flex items-center border border-transparent p-1 hover:border-white cursor-pointer">
+                <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                <p class="font-bold pt-2">Cart</p>
+            </div>
+        </nav>
+        <div class="bg-[#0d1f2d] h-12 flex items-center text-white text-sm">
+                <div class="flex items-center gap-1 border border-transparent p-2 hover:border-white cursor-pointer">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                    <p class="font-bold">All</p>
+                </div>
+                <ul class="flex items-center">
+                    <li class="border border-transparent p-2 hover:border-white cursor-pointer">Today's Deals</li>
+                    <li class="border border-transparent p-2 hover:border-white cursor-pointer">Customer Service</li>
+                    <li class="border border-transparent p-2 hover:border-white cursor-pointer">Registry</li>
+                    <li class="border border-transparent p-2 hover:border-white cursor-pointer">Gift Cards</li>
+                    <li class="border border-transparent p-2 hover:border-white cursor-pointer">Sell</li>
+                </ul>
+        </div>
+    </header>
+    <main class="bg-[#E6E6E6] pb-5">
+        <div class="bg-[url('./img/bodyimg.jpg')] bg-cover h-80 flex justify-center items-end mx-11">
+            <div class="bg-white text-sm h-10 flex justify-center items-center w-[1460px] mb-6 mx-4">
+                <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. 
+                <a class="text-[#007185] hover:underline hover:text-orange-500" href="https://www.amazon.in">Click here to go to amazon.in</a></p>
+            </div>
+        </div>
+        <div class="grid grid-cols-4 gap-4 px-4 mx-9">
+            <div class="bg-white p-4 cursor-pointer">
+                <h2 class="text-xl font-bold">Shop deals in Fashion</h2>
+                <div class="grid grid-cols-2 grid-rows-2 gap-4">
+                    <img src="img/dress1.jpg" class="my-3">
+                    <img src="img/dress2.jpg" class="my-3">
+                    <img src="img/dress3.jpg" class="my-3">
+                    <img src="img/dress4.jpg" class="my-3">
+                </div>
+                
+                <p class="text-[#007185] cursor-pointer hover:text-orange-500 hover:underline">See more</p>
+            </div>
+            <div class="bg-white p-4 cursor-pointer">
+                <h2 class="text-xl font-bold">New year, new supplies</h2>
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2023/img/Consumer_Electronics/XCM_CUTTLE_1555947_2997386_758x608_2X_en_US._SY608_CB594429819_.jpg" class="my-3 h-80">
+                
+                <p class="text-[#007185] cursor-pointer hover:text-orange-500 hover:underline">Shop office products</p>
+            </div>
+            <div class="bg-white p-4 cursor-pointer">
+                <h2 class="text-xl font-bold">Deals in PCs</h2>
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_2x_v1._SY608_CB573698005_.jpg" class="my-3 h-80">
+                
+                <p class="text-[#007185] cursor-pointer hover:text-orange-500 hover:underline">Shop now</p>
+            </div>
+            
+            <div class="bg-white p-4 cursor-pointer">
+                <h2 class="text-xl font-bold">Deals in Shoes</h2>
+                <div class="grid grid-cols-2 grid-rows-2 gap-4">
+                    <img src="img/shoe1.jpg" class="my-3">
+                    <img src="img/shoe2.jpg" class="my-3">
+                    <img src="img/shoe3.jpg" class="my-3">
+                    <img src="img/shoe4.jpg" class="my-3">
+                </div>
+                
+                <p class="text-[#007185] cursor-pointer hover:text-orange-500 hover:underline">See more</p>
+            </div>
+            
+            <div class="bg-white p-4 cursor-pointer">
+                <h2 class="text-xl font-bold">Toys under $25</h2>
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_2x_v3._SY608_CB573698005_.jpg" class="my-3 h-80">
+                
+                <p class="text-[#007185] cursor-pointer hover:text-orange-500 hover:underline">Shop now</p>
+            </div>
+            
+            <div class="bg-white p-4 cursor-pointer">
+                <h2 class="text-xl font-bold">Home décor under $50</h2>
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_2x_v6._SY608_CB573698005_.jpg" class="my-3 h-80">
+                
+                <p class="text-[#007185] cursor-pointer hover:text-orange-500 hover:underline">Shop now</p>
+            </div>
+            <div class="bg-white p-4 cursor-pointer">
+                <h2 class="text-xl font-bold">Lunar New Year</h2>
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/LunarNY/Fuji_Single_card_Lunar_New_Year_Graphics_2x_EN._SY608_CB585956471_.jpg" class="my-3 h-80">
+                
+                <p class="text-[#007185] cursor-pointer hover:text-orange-500 hover:underline">Shop now</p>
+            </div>
+
+            <div class="bg-white p-4 cursor-pointer">
+                <h2 class="text-xl font-bold">Refresh your space</h2>
+                <div class="grid grid-cols-2 grid-rows-2 gap-4">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_372x232_LP-HP_B08MYX5Q2W_01.23._SY232_CB619238939_.jpg" class="my-3 h-32">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_372x232_home_B08RCCP3HV_01.23._SY232_CB619238939_.jpg" class="my-3 h-32">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_372x232_kitchen_B0126LMDFK_01.23._SY232_CB619238939_.jpg" class="my-3 h-32">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_372x232_health-beauty_B07662GN57_01.23._SY232_CB619238939_.jpgg" class="my-3 h-32">
+                </div>
+                
+                <p class="text-[#007185] cursor-pointer hover:text-orange-500 hover:underline mt-6">See more</p>
+            </div>
+
+            
+        </div>
+        <div class="bg-white flex justify-evenly  mx-12 mt-5">
+            
+            <div class="mt-5 mr-5 flex justify-between ">
+                
+            </div>
+            
+            <div class="flex justify-evenly items-center">
+                <div class="cursor-pointer">
+                    <h1 class="text-2xl font-bold mb-3">Popular Gifts in Baby</h1>
+                    <img src="https://m.media-amazon.com/images/I/61t66wWbwSL._AC_SY400_.jpg" class="h-64">
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://m.media-amazon.com/images/I/71hMN-O-OAL._AC_SY400_.jpg" class="mt-2 h-64">   
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://m.media-amazon.com/images/I/81URDd4193L._AC_SY400_.jpg" class="h-64">   
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://m.media-amazon.com/images/I/81MJhRednWL._AC_SY400_.jpg" class=" mr-11 h-64">   
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://m.media-amazon.com/images/I/81r9CTHn5-L._AC_SY400_.jpg" class="my-11 mr-11 h-64">   
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://m.media-amazon.com/images/I/71PG-5HXMVL._AC_SY400_.jpg" class="my-11 mr-11 h-64">   
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <div class="bg-white flex justify-evenly  mx-12 mt-5">
+            
+            <div class="mt-5 mr-5 flex justify-between ">
+                
+            </div>
+            
+            <div class="flex justify-evenly items-center">
+                <div class="cursor-pointer">
+                    <h1 class="text-2xl font-bold mb-3">Popular Gifts in Baby</h1>
+                    <img src="https://m.media-amazon.com/images/I/61t66wWbwSL._AC_SY400_.jpg" class="h-64">
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://m.media-amazon.com/images/I/71hMN-O-OAL._AC_SY400_.jpg" class="mt-2 h-64">   
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://m.media-amazon.com/images/I/81URDd4193L._AC_SY400_.jpg" class="h-64">   
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://m.media-amazon.com/images/I/81MJhRednWL._AC_SY400_.jpg" class=" mr-11 h-64">   
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://m.media-amazon.com/images/I/81r9CTHn5-L._AC_SY400_.jpg" class="my-11 mr-11 h-64">   
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://m.media-amazon.com/images/I/71PG-5HXMVL._AC_SY400_.jpg" class="my-11 mr-11 h-64">   
+                </div>
+                
+            </div>
+            
+        </div>
+       
+    </main>
+    <footer>
+        <div class="bg-white flex justify-evenly mt-5">
+            <div class="my-20">
+                <p class="text-[12px] ml-3 mb-1">See personalized recommendations</p>
+                <button class="w-56 p-1 bg-slate-400 text-sm border-[1px] rounded-md gradient-90">Sign in</button>
+                <p class="text-[10px] ml-11 mt-1">New customer? <a href="https://www.amazon.com/ap/register?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Drhf_sign_in&openid.assoc_handle=usflex" class="text-[#007185] hover:text-orange-500">Start here.</a></p>
+            </div>   
+        </div>
+        <div class="flex justify-center hover:bg-slate-600 bg-[#2F3F4F] text-white p-4 text-sm cursor-pointer" >
+            <a href="#" onclick="tp()">
+                <p>
+                    Back to top
+                </p>
+            </a>
+        </div>
+        
+    <div class="flex justify-evenly bg-slate-800">
+            <div class="p-10 ml-28">
+                <li class="text-white font-bold list-none">Get to Know Us</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Careers</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Blog</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">About Amazon</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Investor Relations</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Amazon Devices</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Amazon Science</li>
+            </div>
+            <div class="p-10">
+                <li class="text-white font-bold list-none">	
+                    Make Money with Us</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Sell products on Amazon
+                </li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Sell on Amazon Business</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Sell apps on Amazon</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Become an Affiliate</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Advertise Your Products</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Self-Publish with Us</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Host an Amazon Hub</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">›See More Make Money with Us</li>
+            </div>
+            <div class="p-10">
+                <li class="text-white font-bold list-none">Amazon Payment Products</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Amazon Business Card</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Shop with Points</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Reload Your Balance</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Amazon Currency Converter</li>
+            </div>
+            <div class="p-10 mr-28">
+                <li class="text-white font-bold list-none">Let Us Help You</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Amazon and COVID- <br> 19</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Your Account</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Your Orders</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Shipping Rates & <br> Policies</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Returns & <br> Replacements</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Manage Your <br> Content and Devices</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Amazon Assistant</li>
+                <li class="text-gray-200 list-none hover:underline cursor-pointer text-[15px] mt-1">Help</li>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
